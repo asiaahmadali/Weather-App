@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+     <!-- animation link -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+     <!-- -- -->
+  </head>
+  <body>
+    <div class="conatiner">
+      <video autoplay loop muted plays-inline class="reset-video">
+        <source src="./pexels_videos_1542008 (1080p).mp4" type="video/mp4" />
+        <!-- <source src="./pexels-i-am-sorin-7716012 (2160p).mp4" type="video/mp4"> -->
+      </video>   
+
+      <!-- intro section -->
+      <div class="intro">
+        <div><h1>Weather Forcast App</h1></div>
+
+        <div class="input-section">
+          <button class="btn" id="mode-btn">Change Mode</button>
+          <input
+            type="text"
+            class="input"
+            id="cityname"
+            placeholder="Enter the name of the city"
+          />
+          <button class="btn" id="search-btn">Search</button>
+        </div>
+      </div>
+
+      <!-- weather details section -->
+      <div class="weather-details" id="W-details">
+        <image src="./images/clouds.png" class="img" id="climateimg"></image>
+        <h1 id="temperature">25.5 °C</h1>
+        <h3 id="city">Lahore</h3>
+        <h3 id="climate">clouds</h3>
+        <p id="country">Pakistan</p>
+      </div>
+
+      <!-- ingformation container -->
+
+      <div class="details-container" id="container">
+        <div>
+          <h2 class="heading2">Max, Min Temp</h2>
+          <p id="max">Maximum Temperature</p>
+          <p id="min">Minimum Temperature</p>
+          <h2 class="heading2">Humidity</h2>
+
+          <div class="main-humidity">
+            <div><image src="./images/humidity.png" class="humidity-img"></image></div>
+            <div class="sub-humidity">
+              <h3 id="humidity">0%</h3>
+              <h3>Humidity</h3>
+            </div>
+          </div>
+        </div>
+        <div>
+          <h2 class="heading2">Sunrise, Sunset Details</h2>
+          <p id="sun-rise">Sunrise</p>
+          <p id="sun-set">Sunset</p>
+          <h2 class="heading2">Wind speed</h2>
+          <div class="main-wind">
+            <div><image src="./images/wind.png" class="wind-img"></image></div>
+            <div class="sub-wind">
+              <h3 id="wind">0 Km/h</h3>
+              <h3>wind-speed</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+    <!-- animation link -->
+   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+   <script>
+        AOS.init();
+   </script>
+   <!--  -->
+  </body>
+</html>
